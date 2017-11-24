@@ -21,7 +21,7 @@
 
 #pragma once
 
-#ifdef _WINDOWS
+#ifdef _WIN32
 
 // Exclude rarely-used stuff from Windows headers
 //#define WIN32_LEAN_AND_MEAN
@@ -51,7 +51,7 @@
 #include <memory.h>
 #include <assert.h>
 
-#ifndef _WINDOWS
+#ifndef _WIN32
 #include <uuid/uuid.h>
 #endif
 

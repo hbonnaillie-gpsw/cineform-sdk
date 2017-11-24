@@ -26,7 +26,7 @@
 
 #include "StdAfx.h"
 
-#ifdef _WINDOWS
+#ifdef _WIN32
 #include "../Common/Settings.h"
 #else
 #define MAX_PATH	260
@@ -56,7 +56,7 @@ void InitGetLUTPaths(char *pPathStr, size_t pathSize, char *pDBStr, size_t DBSiz
 {
 	if (pPathStr && pDBStr)
 	{
-#ifdef _WINDOWS
+#ifdef _WIN32
 		USES_CONVERSION;
 
 		TCHAR defaultLUTpath[260] = "C:\\Program Files\\Common Files\\CineForm\\LUTs";

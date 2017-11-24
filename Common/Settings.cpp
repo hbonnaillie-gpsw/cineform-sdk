@@ -19,7 +19,7 @@
 *
 */
 
-#ifdef _WINDOWS
+#ifdef _WIN32
 
 #include "StdAfx.h"
 
